@@ -1,0 +1,19 @@
+@model WebTest.Models.Nhasanxuat
+@{ ViewData["Title"] = "Thêm nhà sản xuất"; }
+<h2>Thêm nhà sản xuất</h2>
+<form asp-action="them" method="post">
+<div asp-validation-summary="All" class="text-danger"></div>
+<div class="mb-3"><label asp-for="Mansx" class="form-label"></label>
+<input asp-for="Mansx" class="form-control" />
+<span asp-validation-for="Mansx" class="text-danger"></span></div>
+<div class="mb-3"><label asp-for="Tennsx" class="form-label"></label>
+<input asp-for="Tennsx" class="form-control" />
+<span asp-validation-for="Tennsx" class="text-danger"></span></div>
+<div class="mb-3"><label asp-for="Diachi" class="form-label"></label>
+<input asp-for="Diachi" class="form-control" />
+<span asp-validation-for="Diachi" class="text-danger"></span></div>
+<button class="btn btn-primary" type="submit">Lưu</button> <a asp-action="Index" class="btn btn-outline-secondary">Quay lại</a>
+</form>
+@section Scripts {
+<partial name="_ValidationScriptsPartial" />
+}

@@ -1,0 +1,14 @@
+@model IEnumerable<WebTest.Models.Hanghoa>
+@{ ViewData["Title"] = "Danh sách hàng hóa"; }
+<h2>Danh sách hàng hóa</h2>
+<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3">
+@foreach (var item in Model) {
+<div class="col"><article class="card h-100"><img class="card-img-top product-image p-2" src="@(string.IsNullOrEmpty(item.Hinh) ? Url.Content("~/images/placeholder.svg") : Url.Content("~/Hinh/" + item.Hinh))" alt="@item.Tenhang" />
+<div class="card-body"><h3 class="h5">@item.Tenhang</h3><p>Mã hàng: @item.Mahang</p><p>Đơn giá: @item.Dongia?.ToString("N0") đ</p>
+<a asp-controller="HangHoa" asp-action="ChiTiet" asp-route-id="@item.Mahang">Chi tiết</a>
+<form asp-action="chonHanghoa" method="post" class="mt-2"><input type="hidden" name="id" value="@item.Mahang" />
+<label for="qty-@item.Mahang">Số lượng</label><input id="qty-@item.Mahang" type="number" name="txtSoluong" value="1" min="1" max="1000" class="form-control mb-2" required />
+<button class="btn btn-primary">Chọn mua</button></form></div></article></div>
+}
+</div>
+@if (!Model.Any()) { <p>Chưa có hàng hóa. Hãy thêm nhà sản xuất, loại hàng và hàng hóa trong menu quản lý.</p> }

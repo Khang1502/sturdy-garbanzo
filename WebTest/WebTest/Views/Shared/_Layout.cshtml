@@ -1,0 +1,43 @@
+@using Microsoft.AspNetCore.Http
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewData["Title"] - WebTest</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+<div class="container-fluid py-3">
+    <header class="bg-secondary text-white rounded p-3"><h1 class="h3 mb-0">WebTest — Quản lý bán hàng</h1></header>
+    <nav class="d-flex flex-wrap gap-2 py-3" aria-label="Điều hướng chính">
+        <a class="btn btn-primary" asp-controller="Home" asp-action="Index">Trang chủ</a>
+        <a class="btn btn-outline-primary" asp-controller="Home" asp-action="GioHang">Giỏ hàng</a>
+        @if (Context.Session.GetString("Khachhang") == null) {
+            <a class="btn btn-info ms-auto" asp-controller="KhachHang" asp-action="indexDangNhap">Đăng nhập</a>
+            <a class="btn btn-outline-primary" asp-controller="KhachHang" asp-action="dangky">Đăng ký</a>
+        } else {
+            <a class="btn btn-outline-primary ms-auto" asp-controller="KhachHang" asp-action="ThongTin">@Context.Session.GetString("TenKhachhang")</a>
+            <form asp-controller="KhachHang" asp-action="dangxuat" method="post"><button class="btn btn-danger">Đăng xuất</button></form>
+        }
+    </nav>
+    @if (TempData["ThongBao"] is string message) { <div class="alert alert-success" role="status">@message</div> }
+    <div class="row g-3">
+        <aside class="col-md-3 col-lg-2"><nav class="list-group" aria-label="Quản lý">
+            <a class="list-group-item list-group-item-action" asp-controller="NhaSanXuat" asp-action="Index">Quản lý Nhà sản xuất</a>
+            <a class="list-group-item list-group-item-action" asp-controller="NhanVien" asp-action="Index">Quản lý Nhân viên</a>
+            <a class="list-group-item list-group-item-action" asp-controller="LoaiHangHoa" asp-action="Index">Quản lý Loại hàng hóa</a>
+            <a class="list-group-item list-group-item-action" asp-controller="KhachHang" asp-action="Index">Quản lý Khách hàng</a>
+            <a class="list-group-item list-group-item-action" asp-controller="HangHoa" asp-action="Index">Quản lý Hàng hóa</a>
+            <a class="list-group-item list-group-item-action" asp-controller="LyLich" asp-action="Index">Bài 3: Lý lịch học viên</a>
+        </nav></aside>
+        <main class="col-md-9 col-lg-10">@RenderBody()</main>
+    </div>
+    <footer class="bg-secondary text-white rounded p-3 mt-4">Thực hành Lập trình Windows — ASP.NET Core MVC</footer>
+</div>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

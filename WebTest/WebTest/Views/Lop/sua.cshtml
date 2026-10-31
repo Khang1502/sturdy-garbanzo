@@ -1,0 +1,8 @@
+@model WebTest.Models.Lop
+<h2>Sửa Lớp</h2>
+<nav class="mb-3 d-flex gap-2"><a asp-controller="LyLich" asp-action="Index">Lý lịch học viên</a><a asp-controller="Lop" asp-action="Index">Lớp</a><a asp-controller="MonHoc" asp-action="Index">Môn học</a><a asp-controller="DiemThi" asp-action="Index">Điểm thi</a></nav>
+<form asp-action="sua" method="post"><div asp-validation-summary="All" class="text-danger"></div>
+<input asp-for="Malop" type="hidden" /><p>Mã lớp: @Model.Malop</p>
+<div class="mb-3"><label asp-for="Tenlop" class="form-label"></label><input asp-for="Tenlop" class="form-control" /><span asp-validation-for="Tenlop" class="text-danger"></span></div>
+<button class="btn btn-primary">Lưu</button> <a asp-action="Index">Quay lại</a></form>
+@section Scripts { <partial name="_ValidationScriptsPartial" /> }

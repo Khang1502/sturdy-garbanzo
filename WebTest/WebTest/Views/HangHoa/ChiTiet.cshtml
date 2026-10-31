@@ -1,0 +1,8 @@
+@model WebTest.Models.Hanghoa
+@{ ViewData["Title"] = "Chi tiết hàng hóa"; }
+<h2>Chi tiết hàng hóa</h2>
+<img class="product-image" src="@(string.IsNullOrEmpty(Model.Hinh) ? Url.Content("~/images/placeholder.svg") : Url.Content("~/Hinh/" + Model.Hinh))" alt="@Model.Tenhang" />
+<dl><dt>Mã hàng</dt><dd>@Model.Mahang</dd><dt>Tên hàng</dt><dd>@Model.Tenhang</dd><dt>Đơn vị tính</dt><dd>@Model.Donvitinh</dd>
+<dt>Đơn giá</dt><dd>@Model.Dongia?.ToString("N0")</dd><dt>Loại hàng</dt><dd>@Model.MaloaiNavigation?.Tenloai</dd>
+<dt>Nhà sản xuất</dt><dd>@Model.MansxNavigation?.Tennsx</dd></dl>
+<a asp-action="Index" class="btn btn-outline-primary">Quay lại</a>

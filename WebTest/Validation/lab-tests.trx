@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="4f54f12e-806f-463a-99d3-e66d46a9c9b9" name="@f636466215af 2026-10-31 09:38:45" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-10-31T09:38:45.7917172+00:00" queuing="2026-10-31T09:38:45.7917173+00:00" start="2026-10-31T09:38:42.5764143+00:00" finish="2026-10-31T09:38:47.1625609+00:00" />
+  <TestSettings name="default" id="a8468830-be63-487e-b389-76541a177900">
+    <Deployment runDeploymentRoot="_f636466215af_2026-10-31_09_38_45" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="8cec5111-8b6b-424b-b4f4-7dc0ed68195f" testId="e630cb9e-120e-dc65-47e3-72d19dca283d" testName="WebTest.Tests.LabTests.ValidationRejectsMissingNamesAndFutureBirthdays" computerName="f636466215af" duration="00:00:00.0532002" startTime="2026-10-31T09:38:46.0832999+00:00" endTime="2026-10-31T09:38:46.0833000+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8cec5111-8b6b-424b-b4f4-7dc0ed68195f" />
+    <UnitTestResult executionId="84fe296c-f038-4c14-8f16-8d40f5ab7fb0" testId="067b479a-71ec-9599-397e-606095ea5aec" testName="WebTest.Tests.LabTests.OtherModulesCanCreateEditAndDelete(controller: &quot;HangHoa&quot;, key: &quot;Mahang&quot;, name: &quot;Tenhang&quot;)" computerName="f636466215af" duration="00:00:01.6972032" startTime="2026-10-31T09:38:44.9071090+00:00" endTime="2026-10-31T09:38:44.9071293+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="84fe296c-f038-4c14-8f16-8d40f5ab7fb0" />
+    <UnitTestResult executionId="c6f060b1-7101-4523-bd98-9414499fb479" testId="ac201543-25a8-bba9-33e1-e0ccc11ca7e1" testName="WebTest.Tests.LabTests.ManufacturerCanBeCreatedEditedDeletedAndDuplicateIsRejected" computerName="f636466215af" duration="00:00:00.0644551" startTime="2026-10-31T09:38:46.7404945+00:00" endTime="2026-10-31T09:38:46.7404946+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c6f060b1-7101-4523-bd98-9414499fb479" />
+    <UnitTestResult executionId="4d87214f-dc06-47c3-b1c3-c750ed6b574f" testId="86b34e34-5cb6-25e3-4fcd-4f7fa0abc72e" testName="WebTest.Tests.LabTests.OtherModulesCanCreateEditAndDelete(controller: &quot;KhachHang&quot;, key: &quot;Makh&quot;, name: &quot;Tenkh&quot;)" computerName="f636466215af" duration="00:00:00.1893375" startTime="2026-10-31T09:38:45.0969017+00:00" endTime="2026-10-31T09:38:45.0969017+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4d87214f-dc06-47c3-b1c3-c750ed6b574f" />
+    <UnitTestResult executionId="11922464-4d8f-4a23-b2c4-351cf7eb85eb" testId="5927bddf-bb0b-a31e-3740-e173fca61403" testName="WebTest.Tests.LabTests.CrudPagesRenderWithLayout(controller: &quot;KhachHang&quot;, id: &quot;KH01&quot;)" computerName="f636466215af" duration="00:00:00.1206624" startTime="2026-10-31T09:38:45.7695278+00:00" endTime="2026-10-31T09:38:45.7695279+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="11922464-4d8f-4a23-b2c4-351cf7eb85eb" />
+    <UnitTestResult executionId="42b59093-fcb2-4577-84ea-3ff8a5d628aa" testId="03ecf21d-8fac-ad9e-8fe5-c6a374733228" testName="WebTest.Tests.LabTests.RelatedManufacturerCannotBeDeletedAndCsrfIsRequired" computerName="f636466215af" duration="00:00:00.0462375" startTime="2026-10-31T09:38:46.2415565+00:00" endTime="2026-10-31T09:38:46.2415566+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="42b59093-fcb2-4577-84ea-3ff8a5d628aa" />
+    <UnitTestResult executionId="0b134845-6666-44f1-b023-80a0dc90251d" testId="616465a6-6c16-cb3f-a7a7-4c4455f480ad" testName="WebTest.Tests.LabTests.CrudPagesRenderWithLayout(controller: &quot;NhaSanXuat&quot;, id: &quot;NSX01&quot;)" computerName="f636466215af" duration="00:00:00.0861967" startTime="2026-10-31T09:38:45.6484084+00:00" endTime="2026-10-31T09:38:45.6484085+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0b134845-6666-44f1-b023-80a0dc90251d" />
+    <UnitTestResult executionId="bfaf4435-2320-495c-af63-8840e14a777c" testId="438f8e74-d687-472a-c78c-c0a8fb2c187f" testName="WebTest.Tests.LabTests.CartCombinesQuantitiesAndCheckoutSavesOrderAndLines" computerName="f636466215af" duration="00:00:00.2184258" startTime="2026-10-31T09:38:46.9593313+00:00" endTime="2026-10-31T09:38:46.9593314+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bfaf4435-2320-495c-af63-8840e14a777c" />
+    <UnitTestResult executionId="5782b150-7542-4fac-970b-9081c04990fe" testId="040bfc57-87fd-63eb-0782-e17fa085f1c4" testName="WebTest.Tests.LabTests.CrudPagesRenderWithLayout(controller: &quot;LoaiHangHoa&quot;, id: &quot;L01&quot;)" computerName="f636466215af" duration="00:00:00.0677787" startTime="2026-10-31T09:38:45.5623010+00:00" endTime="2026-10-31T09:38:45.5623011+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5782b150-7542-4fac-970b-9081c04990fe" />
+    <UnitTestResult executionId="c8bc9b4b-8050-4f98-9eb0-87fe219022e8" testId="e957756b-11e7-46da-6042-2eb8741b868a" testName="WebTest.Tests.LabTests.SqlServerSchemasCanBeGenerated" computerName="f636466215af" duration="00:00:00.1578471" startTime="2026-10-31T09:38:45.9278623+00:00" endTime="2026-10-31T09:38:45.9278624+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c8bc9b4b-8050-4f98-9eb0-87fe219022e8" />
+    <UnitTestResult executionId="671a84d8-70d9-4f06-96fb-f0c384b89fb4" testId="38905ef6-6668-bf85-6def-16137c296021" testName="WebTest.Tests.LabTests.AnonymousCartItemCanBeRemoved" computerName="f636466215af" duration="00:00:00.0519875" startTime="2026-10-31T09:38:47.0117275+00:00" endTime="2026-10-31T09:38:47.0117276+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="671a84d8-70d9-4f06-96fb-f0c384b89fb4" />
+    <UnitTestResult executionId="ae1f2303-a863-4590-affe-c813904858d5" testId="d20b1f68-20cd-863f-0a39-20043da44aea" testName="WebTest.Tests.LabTests.CrudPagesRenderWithLayout(controller: &quot;HangHoa&quot;, id: &quot;H01&quot;)" computerName="f636466215af" duration="00:00:00.1090303" startTime="2026-10-31T09:38:45.4936168+00:00" endTime="2026-10-31T09:38:45.4936168+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ae1f2303-a863-4590-affe-c813904858d5" />
+    <UnitTestResult executionId="da8a7c98-01e8-46af-81dc-04147d78b675" testId="deb3bb14-b8b5-3fc9-788a-efb8ec9971cf" testName="WebTest.Tests.LabTests.StudentCrudAndForeignKeyValidationWork" computerName="f636466215af" duration="00:00:00.3158977" startTime="2026-10-31T09:38:46.5580063+00:00" endTime="2026-10-31T09:38:46.5580063+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="da8a7c98-01e8-46af-81dc-04147d78b675" />
+    <UnitTestResult executionId="a2ef6faa-3cf2-4575-a66b-0092aa6f8392" testId="62ec4ff8-ff98-4da5-a4eb-0c6d522e8076" testName="WebTest.Tests.LabTests.LoginRegistrationProfileAndLogoutWork" computerName="f636466215af" duration="00:00:00.1172759" startTime="2026-10-31T09:38:46.6756976+00:00" endTime="2026-10-31T09:38:46.6756976+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a2ef6faa-3cf2-4575-a66b-0092aa6f8392" />
+    <UnitTestResult executionId="c1638778-ea75-4f9c-a0a2-1614cbba998f" testId="58fbc223-f4be-9669-9213-51252f1f5b5b" testName="WebTest.Tests.LabTests.ProductAjaxAndImageUploadWork" computerName="f636466215af" duration="00:00:00.1009222" startTime="2026-10-31T09:38:46.0291791+00:00" endTime="2026-10-31T09:38:46.0291792+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c1638778-ea75-4f9c-a0a2-1614cbba998f" />
+    <UnitTestResult executionId="eda84298-e374-49fe-a400-5e6ab688abb2" testId="33d351b5-3f68-0465-63c7-f9d585bd84d5" testName="WebTest.Tests.LabTests.OtherModulesCanCreateEditAndDelete(controller: &quot;NhanVien&quot;, key: &quot;Manv&quot;, name: &quot;Tennv&quot;)" computerName="f636466215af" duration="00:00:00.1215575" startTime="2026-10-31T09:38:45.2182257+00:00" endTime="2026-10-31T09:38:45.2182258+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="eda84298-e374-49fe-a400-5e6ab688abb2" />
+    <UnitTestResult executionId="621feb13-f338-40e0-bad0-5e4d37112f6a" testId="1174620e-462e-44a3-b9a8-95855b6d41be" testName="WebTest.Tests.LabTests.InvalidImageAndNegativePriceAreNotSaved(price: &quot;-1&quot;, validImage: True)" computerName="f636466215af" duration="00:00:00.0635342" startTime="2026-10-31T09:38:46.1467475+00:00" endTime="2026-10-31T09:38:46.1467476+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="621feb13-f338-40e0-bad0-5e4d37112f6a" />
+    <UnitTestResult executionId="99cddcd3-3668-4064-8a72-1cd1546cd671" testId="bf403f9f-ed60-5742-a55a-4175978bd4e3" testName="WebTest.Tests.LabTests.OtherModulesCanCreateEditAndDelete(controller: &quot;LoaiHangHoa&quot;, key: &quot;Maloai&quot;, name: &quot;Tenloai&quot;)" computerName="f636466215af" duration="00:00:00.0933776" startTime="2026-10-31T09:38:45.3119053+00:00" endTime="2026-10-31T09:38:45.3119053+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="99cddcd3-3668-4064-8a72-1cd1546cd671" />
+    <UnitTestResult executionId="a333390f-bcf5-4c0e-89d7-02840a5c4a9b" testId="df6e311a-a630-bac2-9aa0-b85e2f88fcd2" testName="WebTest.Tests.LabTests.InvalidImageAndNegativePriceAreNotSaved(price: &quot;200&quot;, validImage: False)" computerName="f636466215af" duration="00:00:00.0478061" startTime="2026-10-31T09:38:46.1949035+00:00" endTime="2026-10-31T09:38:46.1949036+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a333390f-bcf5-4c0e-89d7-02840a5c4a9b" />
+    <UnitTestResult executionId="f6a1dab9-6029-4c28-9897-2b6086000edb" testId="86665b2a-6458-42f6-461b-e4bc8d8d6a86" testName="WebTest.Tests.LabTests.CrudPagesRenderWithLayout(controller: &quot;NhanVien&quot;, id: &quot;NV01&quot;)" computerName="f636466215af" duration="00:00:00.0710641" startTime="2026-10-31T09:38:45.3841920+00:00" endTime="2026-10-31T09:38:45.3841920+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f6a1dab9-6029-4c28-9897-2b6086000edb" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="WebTest.Tests.LabTests.SqlServerSchemasCanBeGenerated" storage="/workspace/lab-review/hgk/webtest/webtest.tests/bin/debug/net6.0/webtest.tests.dll" id="e957756b-11e7-46da-6042-2eb8741b868a">
+      <Execution id="c8bc9b4b-8050-4f98-9eb0-87fe219022e8" />
+      <TestMethod codeBase="/workspace/lab-review/HGK/WebTest/WebTest.Tests/bin/Debug/net6.0/WebTest.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="WebTest.Tests.LabTests" name="SqlServerSchemasCanBeGenerated" />
+    </UnitTest>
+    <UnitTest name="WebTest.Tests.LabTests.OtherModulesCanCreateEditAndDelete(controller: &quot;LoaiHangHoa&quot;, key: &quot;Maloai&quot;, name: &quot;Tenloai&quot;)" storage="/workspace/lab-review/hgk/webtest/webtest.tests/bin/debug/net6.0/webtest.tests.dll" id="bf403f9f-ed60-5742-a55a-4175978bd4e3">
+      <Execution id="99cddcd3-3668-4064-8a72-1cd1546cd671" />
+      <TestMethod codeBase="/workspace/lab-review/HGK/WebTest/WebTest.Tests/bin/Debug/net6.0/WebTest.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="WebTest.Tests.LabTests" name="OtherModulesCanCreateEditAndDelete" />
+    </UnitTest>
+    <UnitTest name="WebTest.Tests.LabTests.CrudPagesRenderWithLayout(controller: &quot;KhachHang&quot;, id: &quot;KH01&quot;)" storage="/workspace/lab-review/hgk/webtest/webtest.tests/bin/debug/net6.0/webtest.tests.dll" id="5927bddf-bb0b-a31e-3740-e173fca61403">
+      <Execution id="11922464-4d8f-4a23-b2c4-351cf7eb85eb" />
+      <TestMethod codeBase="/workspace/lab-review/HGK/WebTest/WebTest.Tests/bin/Debug/net6.0/WebTest.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="WebTest.Tests.LabTests" name="CrudPagesRenderWithLayout" />
+    </UnitTest>
+    <UnitTest name="WebTest.Tests.LabTests.InvalidImageAndNegativePriceAreNotSaved(price: &quot;-1&quot;, validImage: True)" storage="/workspace/lab-review/hgk/webtest/webtest.tests/bin/debug/net6.0/webtest.tests.dll" id="1174620e-462e-44a3-b9a8-95855b6d41be">
+      <Execution id="621feb13-f338-40e0-bad0-5e4d37112f6a" />
+      <TestMethod codeBase="/workspace/lab-review/HGK/WebTest/WebTest.Tests/bin/Debug/net6.0/WebTest.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="WebTest.Tests.LabTests" name="InvalidImageAndNegativePriceAreNotSaved" />
+    </UnitTest>
+    <UnitTest name="WebTest.Tests.LabTests.OtherModulesCanCreateEditAndDelete(controller: &quot;KhachHang&quot;, key: &quot;Makh&quot;, name: &quot;Tenkh&quot;)" storage="/workspace/lab-review/hgk/webtest/webtest.tests/bin/debug/net6.0/webtest.tests.dll" id="86b34e34-5cb6-25e3-4fcd-4f7fa0abc72e">
+      <Execution id="4d87214f-dc06-47c3-b1c3-c750ed6b574f" />
+      <TestMethod codeBase="/workspace/lab-review/HGK/WebTest/WebTest.Tests/bin/Debug/net6.0/WebTest.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="WebTest.Tests.LabTests" name="OtherModulesCanCreateEditAndDelete" />
+    </UnitTest>
+    <UnitTest name="WebTest.Tests.LabTests.CrudPagesRenderWithLayout(controller: &quot;LoaiHangHoa&quot;, id: &quot;L01&quot;)" storage="/workspace/lab-review/hgk/webtest/webtest.tests/bin/debug/net6.0/webtest.tests.dll" id="040bfc57-87fd-63eb-0782-e17fa085f1c4">
+      <Execution id="5782b150-7542-4fac-970b-9081c04990fe" />
+      <TestMethod codeBase="/workspace/lab-review/HGK/WebTest/WebTest.Tests/bin/Debug/net6.0/WebTest.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="WebTest.Tests.LabTests" name="CrudPagesRenderWithLayout" />
+    </UnitTest>
+    <UnitTest name="WebTest.Tests.LabTests.OtherModulesCanCreateEditAndDelete(controller: &quot;NhanVien&quot;, key: &quot;Manv&quot;, name: &quot;Tennv&quot;)" storage="/workspace/lab-review/hgk/webtest/webtest.tests/bin/debug/net6.0/webtest.tests.dll" id="33d351b5-3f68-0465-63c7-f9d585bd84d5">
+      <Execution id="eda84298-e374-49fe-a400-5e6ab688abb2" />
+      <TestMethod codeBase="/workspace/lab-review/HGK/WebTest/WebTest.Tests/bin/Debug/net6.0/WebTest.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="WebTest.Tests.LabTests" name="OtherModulesCanCreateEditAndDelete" />
+    </UnitTest>
+    <UnitTest name="WebTest.Tests.LabTests.LoginRegistrationProfileAndLogoutWork" storage="/workspace/lab-review/hgk/webtest/webtest.tests/bin/debug/net6.0/webtest.tests.dll" id="62ec4ff8-ff98-4da5-a4eb-0c6d522e8076">
+      <Execution id="a2ef6faa-3cf2-4575-a66b-0092aa6f8392" />
+      <TestMethod codeBase="/workspace/lab-review/HGK/WebTest/WebTest.Tests/bin/Debug/net6.0/WebTest.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="WebTest.Tests.LabTests" name="LoginRegistrationProfileAndLogoutWork" />
+    </UnitTest>
+    <UnitTest name="WebTest.Tests.LabTests.CrudPagesRenderWithLayout(controller: &quot;HangHoa&quot;, id: &quot;H01&quot;)" storage="/workspace/lab-review/hgk/webtest/webtest.tests/bin/debug/net6.0/webtest.tests.dll" id="d20b1f68-20cd-863f-0a39-20043da44aea">
+      <Execution id="ae1f2303-a863-4590-affe-c813904858d5" />
+      <TestMethod codeBase="/workspace/lab-review/HGK/WebTest/WebTest.Tests/bin/Debug/net6.0/WebTest.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="WebTest.Tests.LabTests" name="CrudPagesRenderWithLayout" />
+    </UnitTest>
+    <UnitTest name="WebTest.Tests.LabTests.CrudPagesRenderWithLayout(controller: &quot;NhanVien&quot;, id: &quot;NV01&quot;)" storage="/workspace/lab-review/hgk/webtest/webtest.tests/bin/debug/net6.0/webtest.tests.dll" id="86665b2a-6458-42f6-461b-e4bc8d8d6a86">
+      <Execution id="f6a1dab9-6029-4c28-9897-2b6086000edb" />
+      <TestMethod codeBase="/workspace/lab-review/HGK/WebTest/WebTest.Tests/bin/Debug/net6.0/WebTest.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="WebTest.Tests.LabTests" name="CrudPagesRenderWithLayout" />
+    </UnitTest>
+    <UnitTest name="WebTest.Tests.LabTests.CartCombinesQuantitiesAndCheckoutSavesOrderAndLines" storage="/workspace/lab-review/hgk/webtest/webtest.tests/bin/debug/net6.0/webtest.tests.dll" id="438f8e74-d687-472a-c78c-c0a8fb2c187f">
+      <Execution id="bfaf4435-2320-495c-af63-8840e14a777c" />
+      <TestMethod codeBase="/workspace/lab-review/HGK/WebTest/WebTest.Tests/bin/Debug/net6.0/WebTest.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="WebTest.Tests.LabTests" name="CartCombinesQuantitiesAndCheckoutSavesOrderAndLines" />
+    </UnitTest>
+    <UnitTest name="WebTest.Tests.LabTests.InvalidImageAndNegativePriceAreNotSaved(price: &quot;200&quot;, validImage: False)" storage="/workspace/lab-review/hgk/webtest/webtest.tests/bin/debug/net6.0/webtest.tests.dll" id="df6e311a-a630-bac2-9aa0-b85e2f88fcd2">
+      <Execution id="a333390f-bcf5-4c0e-89d7-02840a5c4a9b" />
+      <TestMethod codeBase="/workspace/lab-review/HGK/WebTest/WebTest.Tests/bin/Debug/net6.0/WebTest.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="WebTest.Tests.LabTests" name="InvalidImageAndNegativePriceAreNotSaved" />
+    </UnitTest>
+    <UnitTest name="WebTest.Tests.LabTests.ProductAjaxAndImageUploadWork" storage="/workspace/lab-review/hgk/webtest/webtest.tests/bin/debug/net6.0/webtest.tests.dll" id="58fbc223-f4be-9669-9213-51252f1f5b5b">
+      <Execution id="c1638778-ea75-4f9c-a0a2-1614cbba998f" />
+      <TestMethod codeBase="/workspace/lab-review/HGK/WebTest/WebTest.Tests/bin/Debug/net6.0/WebTest.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="WebTest.Tests.LabTests" name="ProductAjaxAndImageUploadWork" />
+    </UnitTest>
+    <UnitTest name="WebTest.Tests.LabTests.CrudPagesRenderWithLayout(controller: &quot;NhaSanXuat&quot;, id: &quot;NSX01&quot;)" storage="/workspace/lab-review/hgk/webtest/webtest.tests/bin/debug/net6.0/webtest.tests.dll" id="616465a6-6c16-cb3f-a7a7-4c4455f480ad">
+      <Execution id="0b134845-6666-44f1-b023-80a0dc90251d" />
+      <TestMethod codeBase="/workspace/lab-review/HGK/WebTest/WebTest.Tests/bin/Debug/net6.0/WebTest.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="WebTest.Tests.LabTests" name="CrudPagesRenderWithLayout" />
+    </UnitTest>
+    <UnitTest name="WebTest.Tests.LabTests.ValidationRejectsMissingNamesAndFutureBirthdays" storage="/workspace/lab-review/hgk/webtest/webtest.tests/bin/debug/net6.0/webtest.tests.dll" id="e630cb9e-120e-dc65-47e3-72d19dca283d">
+      <Execution id="8cec5111-8b6b-424b-b4f4-7dc0ed68195f" />
+      <TestMethod codeBase="/workspace/lab-review/HGK/WebTest/WebTest.Tests/bin/Debug/net6.0/WebTest.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="WebTest.Tests.LabTests" name="ValidationRejectsMissingNamesAndFutureBirthdays" />
+    </UnitTest>
+    <UnitTest name="WebTest.Tests.LabTests.RelatedManufacturerCannotBeDeletedAndCsrfIsRequired" storage="/workspace/lab-review/hgk/webtest/webtest.tests/bin/debug/net6.0/webtest.tests.dll" id="03ecf21d-8fac-ad9e-8fe5-c6a374733228">
+      <Execution id="42b59093-fcb2-4577-84ea-3ff8a5d628aa" />
+      <TestMethod codeBase="/workspace/lab-review/HGK/WebTest/WebTest.Tests/bin/Debug/net6.0/WebTest.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="WebTest.Tests.LabTests" name="RelatedManufacturerCannotBeDeletedAndCsrfIsRequired" />
+    </UnitTest>
+    <UnitTest name="WebTest.Tests.LabTests.OtherModulesCanCreateEditAndDelete(controller: &quot;HangHoa&quot;, key: &quot;Mahang&quot;, name: &quot;Tenhang&quot;)" storage="/workspace/lab-review/hgk/webtest/webtest.tests/bin/debug/net6.0/webtest.tests.dll" id="067b479a-71ec-9599-397e-606095ea5aec">
+      <Execution id="84fe296c-f038-4c14-8f16-8d40f5ab7fb0" />
+      <TestMethod codeBase="/workspace/lab-review/HGK/WebTest/WebTest.Tests/bin/Debug/net6.0/WebTest.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="WebTest.Tests.LabTests" name="OtherModulesCanCreateEditAndDelete" />
+    </UnitTest>
+    <UnitTest name="WebTest.Tests.LabTests.ManufacturerCanBeCreatedEditedDeletedAndDuplicateIsRejected" storage="/workspace/lab-review/hgk/webtest/webtest.tests/bin/debug/net6.0/webtest.tests.dll" id="ac201543-25a8-bba9-33e1-e0ccc11ca7e1">
+      <Execution id="c6f060b1-7101-4523-bd98-9414499fb479" />
+      <TestMethod codeBase="/workspace/lab-review/HGK/WebTest/WebTest.Tests/bin/Debug/net6.0/WebTest.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="WebTest.Tests.LabTests" name="ManufacturerCanBeCreatedEditedDeletedAndDuplicateIsRejected" />
+    </UnitTest>
+    <UnitTest name="WebTest.Tests.LabTests.AnonymousCartItemCanBeRemoved" storage="/workspace/lab-review/hgk/webtest/webtest.tests/bin/debug/net6.0/webtest.tests.dll" id="38905ef6-6668-bf85-6def-16137c296021">
+      <Execution id="671a84d8-70d9-4f06-96fb-f0c384b89fb4" />
+      <TestMethod codeBase="/workspace/lab-review/HGK/WebTest/WebTest.Tests/bin/Debug/net6.0/WebTest.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="WebTest.Tests.LabTests" name="AnonymousCartItemCanBeRemoved" />
+    </UnitTest>
+    <UnitTest name="WebTest.Tests.LabTests.StudentCrudAndForeignKeyValidationWork" storage="/workspace/lab-review/hgk/webtest/webtest.tests/bin/debug/net6.0/webtest.tests.dll" id="deb3bb14-b8b5-3fc9-788a-efb8ec9971cf">
+      <Execution id="da8a7c98-01e8-46af-81dc-04147d78b675" />
+      <TestMethod codeBase="/workspace/lab-review/HGK/WebTest/WebTest.Tests/bin/Debug/net6.0/WebTest.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="WebTest.Tests.LabTests" name="StudentCrudAndForeignKeyValidationWork" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="e630cb9e-120e-dc65-47e3-72d19dca283d" executionId="8cec5111-8b6b-424b-b4f4-7dc0ed68195f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="067b479a-71ec-9599-397e-606095ea5aec" executionId="84fe296c-f038-4c14-8f16-8d40f5ab7fb0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ac201543-25a8-bba9-33e1-e0ccc11ca7e1" executionId="c6f060b1-7101-4523-bd98-9414499fb479" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="86b34e34-5cb6-25e3-4fcd-4f7fa0abc72e" executionId="4d87214f-dc06-47c3-b1c3-c750ed6b574f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5927bddf-bb0b-a31e-3740-e173fca61403" executionId="11922464-4d8f-4a23-b2c4-351cf7eb85eb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="03ecf21d-8fac-ad9e-8fe5-c6a374733228" executionId="42b59093-fcb2-4577-84ea-3ff8a5d628aa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="616465a6-6c16-cb3f-a7a7-4c4455f480ad" executionId="0b134845-6666-44f1-b023-80a0dc90251d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="438f8e74-d687-472a-c78c-c0a8fb2c187f" executionId="bfaf4435-2320-495c-af63-8840e14a777c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="040bfc57-87fd-63eb-0782-e17fa085f1c4" executionId="5782b150-7542-4fac-970b-9081c04990fe" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e957756b-11e7-46da-6042-2eb8741b868a" executionId="c8bc9b4b-8050-4f98-9eb0-87fe219022e8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="38905ef6-6668-bf85-6def-16137c296021" executionId="671a84d8-70d9-4f06-96fb-f0c384b89fb4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d20b1f68-20cd-863f-0a39-20043da44aea" executionId="ae1f2303-a863-4590-affe-c813904858d5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="deb3bb14-b8b5-3fc9-788a-efb8ec9971cf" executionId="da8a7c98-01e8-46af-81dc-04147d78b675" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="62ec4ff8-ff98-4da5-a4eb-0c6d522e8076" executionId="a2ef6faa-3cf2-4575-a66b-0092aa6f8392" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="58fbc223-f4be-9669-9213-51252f1f5b5b" executionId="c1638778-ea75-4f9c-a0a2-1614cbba998f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="33d351b5-3f68-0465-63c7-f9d585bd84d5" executionId="eda84298-e374-49fe-a400-5e6ab688abb2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1174620e-462e-44a3-b9a8-95855b6d41be" executionId="621feb13-f338-40e0-bad0-5e4d37112f6a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bf403f9f-ed60-5742-a55a-4175978bd4e3" executionId="99cddcd3-3668-4064-8a72-1cd1546cd671" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="df6e311a-a630-bac2-9aa0-b85e2f88fcd2" executionId="a333390f-bcf5-4c0e-89d7-02840a5c4a9b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="86665b2a-6458-42f6-461b-e4bc8d8d6a86" executionId="f6a1dab9-6029-4c28-9897-2b6086000edb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="20" executed="20" passed="20" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.8.2+699d445a1a (64-bit .NET 6.0.36)
+[xUnit.net 00:00:00.07]   Discovering: WebTest.Tests
+[xUnit.net 00:00:00.15]   Discovered:  WebTest.Tests
+[xUnit.net 00:00:00.15]   Starting:    WebTest.Tests
+[xUnit.net 00:00:04.02]   Finished:    WebTest.Tests
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

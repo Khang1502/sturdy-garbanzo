@@ -1,0 +1,17 @@
+@model WebTest.Models.Hanghoa
+<h2>Xóa hàng hóa</h2>
+<div asp-validation-summary="All" class="text-danger"></div>
+<p><strong>Mã hàng hóa:</strong> @Model.Mahang</p>
+<p><strong>Tên hàng hóa:</strong> @Model.Tenhang</p>
+<p><strong>Đơn vị tính:</strong> @Model.Donvitinh</p>
+<p><strong>Đơn giá:</strong> @Model.Dongia</p>
+<p><strong>Hình ảnh:</strong> @Model.Hinh</p>
+<p><strong>Loại hàng hóa:</strong> @Model.Maloai</p>
+<p><strong>Nhà sản xuất:</strong> @Model.Mansx</p>
+@if (ViewBag.CoLienQuan == true) {
+<div class="alert alert-warning">Không thể xóa: dữ liệu đang được sử dụng ở bảng liên quan.</div>
+} else {
+<form asp-action="xoa" method="post"><input type="hidden" name="id" value="@Model.Mahang" />
+<p>Bạn có chắc muốn xóa bản ghi này?</p><button class="btn btn-danger">Xác nhận xóa</button></form>
+}
+<a asp-action="Index" class="btn btn-outline-secondary mt-2">Quay lại</a>

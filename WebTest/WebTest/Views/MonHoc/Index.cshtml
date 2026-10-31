@@ -1,0 +1,7 @@
+@model IEnumerable<WebTest.Models.MonHoc>
+<h2>Quản lý Môn học</h2>
+<nav class="mb-3 d-flex gap-2"><a asp-controller="LyLich" asp-action="Index">Lý lịch học viên</a><a asp-controller="Lop" asp-action="Index">Lớp</a><a asp-controller="MonHoc" asp-action="Index">Môn học</a><a asp-controller="DiemThi" asp-action="Index">Điểm thi</a></nav>
+<p><a asp-action="them" class="btn btn-primary">Thêm mới</a></p><div class="table-responsive"><table class="table"><thead><tr><th>Mã môn học</th><th>Tên môn học</th><th>Số tiết</th><th>Tác vụ</th></tr></thead><tbody>
+@foreach(var item in Model) { <tr>
+<td>@item.Msmh</td><td>@item.Tenmh</td><td>@item.Sotiet</td><td><a asp-action="sua" asp-route-id="@item.Msmh">Sửa</a> | <a asp-action="xoa" asp-route-id="@item.Msmh">Xóa</a></td></tr> }
+</tbody></table></div>

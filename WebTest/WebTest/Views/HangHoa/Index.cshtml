@@ -1,0 +1,16 @@
+@model IEnumerable<WebTest.Models.Hanghoa>
+@{ ViewData["Title"] = "Quản lý hàng hóa"; }
+<h2>Quản lý hàng hóa</h2>
+<p><a asp-action="them" class="btn btn-primary">Thêm mới</a></p>
+<div class="table-responsive"><table class="table table-striped"><thead><tr><th>Mã hàng hóa</th><th>Tên hàng hóa</th><th>Đơn vị tính</th><th>Đơn giá</th><th>Hình ảnh</th><th>Loại hàng hóa</th><th>Nhà sản xuất</th><th>Tác vụ</th></tr></thead><tbody>
+@foreach (var item in Model) { <tr>
+<td>@item.Mahang</td>
+<td>@item.Tenhang</td>
+<td>@item.Donvitinh</td>
+<td>@item.Dongia</td>
+<td><img width="70" height="60" style="object-fit:contain" src="@(string.IsNullOrEmpty(item.Hinh) ? Url.Content("~/images/placeholder.svg") : Url.Content("~/Hinh/" + item.Hinh))" alt="@item.Tenhang" /></td>
+<td>@item.MaloaiNavigation?.Tenloai</td>
+<td>@item.MansxNavigation?.Tennsx</td>
+<td><a asp-action="sua" asp-route-id="@item.Mahang">Sửa</a> | <a asp-action="xoa" asp-route-id="@item.Mahang">Xóa</a> | <a asp-action="ChiTiet" asp-route-id="@item.Mahang">Chi tiết</a></td></tr> }
+</tbody></table></div>
+@if (!Model.Any()) { <p>Chưa có dữ liệu.</p> }

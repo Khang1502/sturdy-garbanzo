@@ -1,0 +1,9 @@
+@model WebTest.Models.DiemThi
+<h2>Sửa Điểm thi</h2>
+<nav class="mb-3 d-flex gap-2"><a asp-controller="LyLich" asp-action="Index">Lý lịch học viên</a><a asp-controller="Lop" asp-action="Index">Lớp</a><a asp-controller="MonHoc" asp-action="Index">Môn học</a><a asp-controller="DiemThi" asp-action="Index">Điểm thi</a></nav>
+<form asp-action="sua" method="post"><div asp-validation-summary="All" class="text-danger"></div>
+<input asp-for="Mshv" type="hidden" /><p>Mã học viên: @Model.Mshv</p>
+<input asp-for="Msmh" type="hidden" /><p>Mã môn học: @Model.Msmh</p>
+<div class="mb-3"><label asp-for="Diem" class="form-label"></label><input asp-for="Diem" class="form-control" type="number" step="any" /><span asp-validation-for="Diem" class="text-danger"></span></div>
+<button class="btn btn-primary">Lưu</button> <a asp-action="Index">Quay lại</a></form>
+@section Scripts { <partial name="_ValidationScriptsPartial" /> }

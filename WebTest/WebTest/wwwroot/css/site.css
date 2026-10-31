@@ -1,0 +1,8 @@
+html { font-size: 16px; }
+body { background: #f5f7fa; color: #243247; }
+main { min-height: 65vh; }
+.table { background: white; }
+form .mb-3 { max-width: 680px; }
+.product-image { height: 150px; width: 100%; object-fit: contain; }
+.field-validation-error, .validation-summary-errors { color: #b42318; }
+.input-validation-error { border-color: #b42318; }

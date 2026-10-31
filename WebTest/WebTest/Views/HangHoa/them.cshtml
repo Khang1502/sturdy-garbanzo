@@ -1,0 +1,32 @@
+@model WebTest.Models.Hanghoa
+@{ ViewData["Title"] = "Thêm hàng hóa"; }
+<h2>Thêm hàng hóa</h2>
+<form asp-action="them" method="post" enctype="multipart/form-data">
+<div asp-validation-summary="All" class="text-danger"></div>
+<div class="mb-3"><label asp-for="Mahang" class="form-label"></label>
+<input asp-for="Mahang" class="form-control" />
+<span asp-validation-for="Mahang" class="text-danger"></span></div>
+<div class="mb-3"><label asp-for="Tenhang" class="form-label"></label>
+<input asp-for="Tenhang" class="form-control" />
+<span asp-validation-for="Tenhang" class="text-danger"></span></div>
+<div class="mb-3"><label asp-for="Donvitinh" class="form-label"></label>
+<input asp-for="Donvitinh" class="form-control" />
+<span asp-validation-for="Donvitinh" class="text-danger"></span></div>
+<div class="mb-3"><label asp-for="Dongia" class="form-label"></label>
+<input asp-for="Dongia" type="number" min="0" step="any" class="form-control" />
+<span asp-validation-for="Dongia" class="text-danger"></span></div>
+<div class="mb-3"><label asp-for="Maloai" class="form-label"></label>
+<select asp-for="Maloai" asp-items="ViewBag.LoaiItems" class="form-select catalog-select" data-info-url="@Url.Action("ThongTinLoai")"><option value="">-- Chọn --</option></select><div id="Maloai-info" class="small mt-2" aria-live="polite"></div>
+<span asp-validation-for="Maloai" class="text-danger"></span></div>
+<div class="mb-3"><label asp-for="Mansx" class="form-label"></label>
+<select asp-for="Mansx" asp-items="ViewBag.NsxItems" class="form-select catalog-select" data-info-url="@Url.Action("ThongTinNsx")"><option value="">-- Chọn --</option></select><div id="Mansx-info" class="small mt-2" aria-live="polite"></div>
+<span asp-validation-for="Mansx" class="text-danger"></span></div>
+<div class="mb-3"><label for="anh" class="form-label">Hình ảnh (JPG, PNG, GIF, WebP; tối đa 2 MB)</label>
+<input type="file" name="anh" id="anh" accept="image/jpeg,image/png,image/gif,image/webp" class="form-control" />
+<img id="image-preview" class="product-image mt-2" src="@(string.IsNullOrEmpty(Model.Hinh) ? Url.Content("~/images/placeholder.svg") : Url.Content("~/Hinh/" + Model.Hinh))" alt="Ảnh hàng hóa" />
+<span class="text-danger">@Html.ValidationMessage("anh")</span></div><button class="btn btn-primary" type="submit">Lưu</button> <a asp-action="Index" class="btn btn-outline-secondary">Quay lại</a>
+</form>
+@section Scripts {
+<partial name="_ValidationScriptsPartial" />
+<script src="~/js/hanghoa.js" asp-append-version="true"></script>
+}

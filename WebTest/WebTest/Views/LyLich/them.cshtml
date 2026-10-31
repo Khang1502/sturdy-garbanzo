@@ -1,0 +1,11 @@
+@model WebTest.Models.LyLich
+<h2>Thêm Lý lịch học viên</h2>
+<nav class="mb-3 d-flex gap-2"><a asp-controller="LyLich" asp-action="Index">Lý lịch học viên</a><a asp-controller="Lop" asp-action="Index">Lớp</a><a asp-controller="MonHoc" asp-action="Index">Môn học</a><a asp-controller="DiemThi" asp-action="Index">Điểm thi</a></nav>
+<form asp-action="them" method="post"><div asp-validation-summary="All" class="text-danger"></div>
+<div class="mb-3"><label asp-for="Mshv" class="form-label"></label><input asp-for="Mshv" class="form-control" /><span asp-validation-for="Mshv" class="text-danger"></span></div>
+<div class="mb-3"><label asp-for="Tenhv" class="form-label"></label><input asp-for="Tenhv" class="form-control" /><span asp-validation-for="Tenhv" class="text-danger"></span></div>
+<div class="mb-3"><label asp-for="Ngaysinh" class="form-label"></label><input asp-for="Ngaysinh" class="form-control" type="date" /><span asp-validation-for="Ngaysinh" class="text-danger"></span></div>
+<div class="mb-3"><label asp-for="Phai" class="form-label"></label><select asp-for="Phai" class="form-select"><option value="">-- Chọn --</option><option value="true">Nam</option><option value="false">Nữ</option></select><span asp-validation-for="Phai" class="text-danger"></span></div>
+<div class="mb-3"><label asp-for="Malop" class="form-label"></label><select asp-for="Malop" asp-items="ViewBag.Lops" class="form-select"><option value="">-- Chọn --</option></select><span asp-validation-for="Malop" class="text-danger"></span></div>
+<button class="btn btn-primary">Lưu</button> <a asp-action="Index">Quay lại</a></form>
+@section Scripts { <partial name="_ValidationScriptsPartial" /> }

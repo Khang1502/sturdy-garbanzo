@@ -1,0 +1,9 @@
+@model WebTest.Models.MonHoc
+<h2>Thêm Môn học</h2>
+<nav class="mb-3 d-flex gap-2"><a asp-controller="LyLich" asp-action="Index">Lý lịch học viên</a><a asp-controller="Lop" asp-action="Index">Lớp</a><a asp-controller="MonHoc" asp-action="Index">Môn học</a><a asp-controller="DiemThi" asp-action="Index">Điểm thi</a></nav>
+<form asp-action="them" method="post"><div asp-validation-summary="All" class="text-danger"></div>
+<div class="mb-3"><label asp-for="Msmh" class="form-label"></label><input asp-for="Msmh" class="form-control" /><span asp-validation-for="Msmh" class="text-danger"></span></div>
+<div class="mb-3"><label asp-for="Tenmh" class="form-label"></label><input asp-for="Tenmh" class="form-control" /><span asp-validation-for="Tenmh" class="text-danger"></span></div>
+<div class="mb-3"><label asp-for="Sotiet" class="form-label"></label><input asp-for="Sotiet" class="form-control" /><span asp-validation-for="Sotiet" class="text-danger"></span></div>
+<button class="btn btn-primary">Lưu</button> <a asp-action="Index">Quay lại</a></form>
+@section Scripts { <partial name="_ValidationScriptsPartial" /> }

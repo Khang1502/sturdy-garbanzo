@@ -1,0 +1,29 @@
+@model WebTest.Models.Khachhang
+@{ ViewData["Title"] = "Thông tin khách hàng"; }
+<h2>Thông tin khách hàng</h2>
+<form asp-action="ThongTin" method="post">
+<div asp-validation-summary="All" class="text-danger"></div>
+<input asp-for="Makh" type="hidden" /><p><strong>Mã khách hàng:</strong> @Model.Makh</p>
+<div class="mb-3"><label asp-for="Tenkh" class="form-label"></label>
+<input asp-for="Tenkh" class="form-control" />
+<span asp-validation-for="Tenkh" class="text-danger"></span></div>
+<div class="mb-3"><label asp-for="Namsinh" class="form-label"></label>
+<input asp-for="Namsinh" type="number" class="form-control" />
+<span asp-validation-for="Namsinh" class="text-danger"></span></div>
+<div class="mb-3"><label asp-for="Phai" class="form-label"></label>
+<select asp-for="Phai" class="form-select"><option value="">-- Chọn phái --</option><option value="true">Nam</option><option value="false">Nữ</option></select>
+<span asp-validation-for="Phai" class="text-danger"></span></div>
+<div class="mb-3"><label asp-for="Dienthoai" class="form-label"></label>
+<input asp-for="Dienthoai" class="form-control" />
+<span asp-validation-for="Dienthoai" class="text-danger"></span></div>
+<div class="mb-3"><label asp-for="Diachi" class="form-label"></label>
+<input asp-for="Diachi" class="form-control" />
+<span asp-validation-for="Diachi" class="text-danger"></span></div>
+<div class="mb-3"><label asp-for="Password" class="form-label"></label>
+<input name="Password" id="Password" type="password" class="form-control" maxlength="50" autocomplete="new-password" />
+<span asp-validation-for="Password" class="text-danger"></span></div>
+<button class="btn btn-primary" type="submit">Lưu</button> <a asp-action="Index" class="btn btn-outline-secondary">Quay lại</a>
+</form>
+@section Scripts {
+<partial name="_ValidationScriptsPartial" />
+}

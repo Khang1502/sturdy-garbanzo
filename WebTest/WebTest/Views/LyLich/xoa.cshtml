@@ -1,0 +1,3 @@
+@model WebTest.Models.LyLich
+<h2>Xóa Lý lịch học viên</h2><div asp-validation-summary="All" class="text-danger"></div><p>Mã học viên: @Model.Mshv</p><p>Tên học viên: @Model.Tenhv</p><p>Ngày sinh: @Model.Ngaysinh</p><p>Phái: @Model.Phai</p><p>Lớp: @Model.Malop</p>@if (ViewBag.CoLienQuan == true) { <div class="alert alert-warning">Không thể xóa vì có dữ liệu liên quan.</div> } else {
+<form asp-action="xoa" method="post"><input type="hidden" name="id" value="@Model.Mshv" /><button class="btn btn-danger">Xác nhận xóa</button></form> }<a asp-action="Index">Quay lại</a>

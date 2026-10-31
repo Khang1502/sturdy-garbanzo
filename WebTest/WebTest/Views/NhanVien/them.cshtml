@@ -1,0 +1,28 @@
+@model WebTest.Models.Nhanvien
+@{ ViewData["Title"] = "Thêm nhân viên"; }
+<h2>Thêm nhân viên</h2>
+<form asp-action="them" method="post">
+<div asp-validation-summary="All" class="text-danger"></div>
+<div class="mb-3"><label asp-for="Manv" class="form-label"></label>
+<input asp-for="Manv" class="form-control" />
+<span asp-validation-for="Manv" class="text-danger"></span></div>
+<div class="mb-3"><label asp-for="Tennv" class="form-label"></label>
+<input asp-for="Tennv" class="form-control" />
+<span asp-validation-for="Tennv" class="text-danger"></span></div>
+<div class="mb-3"><label asp-for="Ngaysinh" class="form-label"></label>
+<input asp-for="Ngaysinh" type="date" class="form-control" />
+<span asp-validation-for="Ngaysinh" class="text-danger"></span></div>
+<div class="mb-3"><label asp-for="Phai" class="form-label"></label>
+<select asp-for="Phai" class="form-select"><option value="">-- Chọn phái --</option><option value="true">Nam</option><option value="false">Nữ</option></select>
+<span asp-validation-for="Phai" class="text-danger"></span></div>
+<div class="mb-3"><label asp-for="Diachi" class="form-label"></label>
+<input asp-for="Diachi" class="form-control" />
+<span asp-validation-for="Diachi" class="text-danger"></span></div>
+<div class="mb-3"><label asp-for="Password" class="form-label"></label>
+<input name="Password" id="Password" type="password" class="form-control" maxlength="50" autocomplete="new-password" required />
+<span asp-validation-for="Password" class="text-danger"></span></div>
+<button class="btn btn-primary" type="submit">Lưu</button> <a asp-action="Index" class="btn btn-outline-secondary">Quay lại</a>
+</form>
+@section Scripts {
+<partial name="_ValidationScriptsPartial" />
+}

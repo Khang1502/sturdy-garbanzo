@@ -1,0 +1,13 @@
+@model WebTest.Models.Nhasanxuat
+<h2>Xóa nhà sản xuất</h2>
+<div asp-validation-summary="All" class="text-danger"></div>
+<p><strong>Mã nhà sản xuất:</strong> @Model.Mansx</p>
+<p><strong>Tên nhà sản xuất:</strong> @Model.Tennsx</p>
+<p><strong>Địa chỉ:</strong> @Model.Diachi</p>
+@if (ViewBag.CoLienQuan == true) {
+<div class="alert alert-warning">Không thể xóa: dữ liệu đang được sử dụng ở bảng liên quan.</div>
+} else {
+<form asp-action="xoa" method="post"><input type="hidden" name="id" value="@Model.Mansx" />
+<p>Bạn có chắc muốn xóa bản ghi này?</p><button class="btn btn-danger">Xác nhận xóa</button></form>
+}
+<a asp-action="Index" class="btn btn-outline-secondary mt-2">Quay lại</a>

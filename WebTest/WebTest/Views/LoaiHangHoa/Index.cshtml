@@ -1,0 +1,11 @@
+@model IEnumerable<WebTest.Models.Loaihanghoa>
+@{ ViewData["Title"] = "Quản lý loại hàng hóa"; }
+<h2>Quản lý loại hàng hóa</h2>
+<p><a asp-action="them" class="btn btn-primary">Thêm mới</a></p>
+<div class="table-responsive"><table class="table table-striped"><thead><tr><th>Mã loại hàng hóa</th><th>Tên loại hàng hóa</th><th>Tác vụ</th></tr></thead><tbody>
+@foreach (var item in Model) { <tr>
+<td>@item.Maloai</td>
+<td>@item.Tenloai</td>
+<td><a asp-action="sua" asp-route-id="@item.Maloai">Sửa</a> | <a asp-action="xoa" asp-route-id="@item.Maloai">Xóa</a></td></tr> }
+</tbody></table></div>
+@if (!Model.Any()) { <p>Chưa có dữ liệu.</p> }
